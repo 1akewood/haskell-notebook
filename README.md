@@ -159,3 +159,4 @@ docker build --build-arg BASE_CONTAINER=jupyter/scipy-notebook --rm --force-rm -
 [datahaskell.org](http://www.datahaskell.org/)
 
 This Docker image was made at [Cross Compass](https://www.cross-compass.com/) in Tokyo.
+# haskell-notebook
