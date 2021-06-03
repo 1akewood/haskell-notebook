@@ -225,14 +225,6 @@ RUN    mkdir -p $EXAMPLES_PATH \
     && cp /opt/hvega/notebooks/*.ipynb ihaskell-hvega/ \
     && cp /opt/hvega/notebooks/*.tsv ihaskell-hvega/ \
     && fix-permissions $EXAMPLES_PATH
-FROM python:3.7
-FROM jupyter/minimal-notebook
-WORKDIR $HOME
-RUN python -m pip install --upgrade pip
-COPY requirements.txt ./requirements.txt
-RUN python -m pip  install -r requirements.tx
-RUN python -m pip install --upgrade --no-deps --force-reinstall notebook
-#
 RUN python -m pip install jupyterthemes
 RUN python -m pip install --upgrade jupyterthemes
 RUN python -m pip install jupyter_contrib_nbextensions
